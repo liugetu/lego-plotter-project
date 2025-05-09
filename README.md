@@ -1,24 +1,28 @@
 # lego-plotter-project
-A plotter robot built with Lego
+A plotter robot built with Lego.
 
-Para enviar la imagen y generar las coordenadas:
-# python3 convert.py imagen.jpg
+# Instructions
+To send the image and generate the coordinates (enter the name of the image you want to draw, it should be in the same directory):
 
-Para ver lo que dibujará 
-(saldrá deformado porque no tiene la misma proporción que la hoja)
-# python3 preview.py
+<pre><code>python3 convert.py imagen.jpg</code></pre>
 
-Para enviárselo al robot:
-# scp exec4.py coordenadas.txt stop.py robot@169.254.206.221:/home/robot/
+This will generate a file `coordenadas.txt` containing the drawing coordinates.
 
-Password: maker
+To preview what will be drawn (it will be deformed because it doesn't have the same aspect ratio as the paper):
+<pre><code>python3 preview.py</code></pre>
 
-Para entrar al robot y ejecutar:
-# ssh robot@169.254.206.221
-# python3 exec4.py
+To send the files to the robot (change the IP address to yours):
+<pre><code>scp exec4.py coordenadas.txt stop.py robot@169.254.206.221:/home/robot/</code></pre>
 
-Por si deja de funcionar bien o para subir el lápiz:
-# python3 stop.py
+The default password to access the robot is `maker`.
 
-Nota: se tiene que usar una hoja blanca, no puede ser oscura para el correcto
-funcionamiento del sensor de color
+To enter the robot and start drawing (I recommend using a different terminal):
+<pre><code>ssh robot@169.254.206.221
+python3 exec4.py</code></pre>
+
+To exit this mode, just enter `exit`.
+
+In case it doesn't work well and can't stop, or you want to level up the pen:
+<pre><code></code>python3 stop.py</code></pre>
+
+Note: a white paper should be used, otherwise the color sensor might not work well.
