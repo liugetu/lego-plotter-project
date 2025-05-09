@@ -4,7 +4,7 @@ A plotter robot built with Lego.
 # Instructions
 To send the image and generate the coordinates (enter the name of the image you want to draw, it should be in the same directory):
 
-<pre><code>python3 convert.py imagen.jpg</code></pre>
+<pre><code>python3 convert.py cara1.jpg</code></pre>
 
 This will generate a file `coordenadas.txt` containing the drawing coordinates.
 
