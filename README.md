@@ -1,6 +1,10 @@
 # lego-plotter-project
 A plotter robot built with Lego.
 
+[Build instructions (PDF / 44MB)](https://jander.me.uk/LEGO/resources/Plott3r.pdf)
+
+Based on a work at http://jander.me.uk/LEGO/plott3r.html.
+
 # Instructions
 To send the image and generate the coordinates (enter the name of the image you want to draw, it should be in the same directory):
 
